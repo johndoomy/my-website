@@ -1,6 +1,10 @@
-// import imgage2 from '../images/me_2.PNG';
+import { useEffect } from 'react';
 
 export default function About2() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="">
       <div className="  bg-white  ">

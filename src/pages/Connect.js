@@ -4,7 +4,7 @@ import { MdEmail } from 'react-icons/md';
 
 export default function Connect() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <div className="py-24 px-6 flex justify-center text-lg">
         <p className="text-center md:w-80">
           If you have any questions or inquiries, please feel free to connect

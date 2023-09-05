@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import PortfolioCard from '../components/PortfolioCard';
 import stronglifts1 from '../images/stronglifts1.png';
 import stronglifts2 from '../images/stronglifts2.png';
@@ -7,6 +8,10 @@ import supperbell1 from '../images/supperbell1.png';
 import supperbell2 from '../images/supperbell2.png';
 
 export default function Portfolio() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const baseStyling =
     'md:text-center indent-6 md:indent-0 md:w-80 md:mt-32 md:text-lg';
   return (

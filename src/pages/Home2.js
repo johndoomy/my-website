@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 
 export default function Home2() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   let styling;
   if (window.innerWidth > 425) {
     styling = {
@@ -17,7 +22,7 @@ export default function Home2() {
   return (
     <div className="overflow-hidden">
       <div
-        className="relative overflow-hidden bg-cover bg-no-repeat hero-background"
+        className="relative overflow-hidden bg-cover bg-no-repeat bg-[url('https://johnpersonalwebsite.s3.amazonaws.com/images/bg-hero-3.jpg')]"
         style={styling}
       >
         <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.15)] bg-fixed">
@@ -43,7 +48,7 @@ export default function Home2() {
           </div>
         </div>
       </div>
-      <div className="text-center pt-8  bg-primary text-black pb-40">
+      <div className="text-center pt-8  bg-primary text-black pb-32">
         <p className="mb-8 text-xl">I'm a web developer based in Denver, CO</p>
         <Link className="text-black" to="/about">
           <Button
