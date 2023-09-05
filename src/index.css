@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+  }
+}
+
+.hero-background {
+  background-image: url('https://johnpersonalwebsite.s3.amazonaws.com/images/bg-hero-2.png');
+}
