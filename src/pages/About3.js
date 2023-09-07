@@ -14,13 +14,6 @@ export default function About3({ windowWidth }) {
           terms of my linguistic background. I love learning languages and it
           felt no different when learning a programming language.
         </p>
-        {/* <div>
-          <img
-            className="align-bottom pl-4 md:p-0 md:w-80 md:h-80"
-            src={imgage2}
-            alt=""
-          />
-        </div> */}
       </div>
       <div className=" w-full block animate-fadeIn-1">
         <p className="w-80 2xl:w-auto 2xl:px-80 2xl:mx-80 2xl:py-16 py-8 md:py-16 mx-auto block">

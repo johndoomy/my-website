@@ -69,7 +69,7 @@ export default function Header2() {
     'px-7 w-auto py-4 md:px-12 bg-complementary1 text-primary';
 
   return (
-    <div className="h-15 w-full z-10 text-sm sticky top-0 bg-white">
+    <div className="h-15 w-full z-10 text-sm sticky top-0 bg-white shadow-md">
       <div className=" w-full bg-transparent flex justify-between md:justify-end">
         <div>
           <button

@@ -11,7 +11,7 @@ export default function Portfolio2() {
   return (
     <div id="portfolio">
       <div className="pt-8 px-8 md:pr-0 md:w-80 pb-16 md:m-auto">
-        <h1 className="text-2xl mb-12 animate-fadeIn-.4">My Portfolio</h1>
+        <h1 className="text-3xl mb-12 animate-fadeIn-.4">My Portfolio</h1>
         <p className="animate-fadeIn-1">
           I am presenting my portfolio as a progression in my learning journey.
           I have 3 projects that I believe show a clear line of progression over
