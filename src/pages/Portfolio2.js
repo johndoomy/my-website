@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import PortfolioCard from '../components/PortfolioCard';
 import stronglifts1 from '../images/stronglifts1.png';
 import stronglifts2 from '../images/stronglifts2.png';
@@ -7,16 +6,11 @@ import recipeai2 from '../images/recipeai2.png';
 import supperbell1 from '../images/supperbell1.png';
 import supperbell2 from '../images/supperbell2.png';
 
-export default function Portfolio() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const baseStyling =
-    'md:text-center indent-6 md:indent-0 md:w-80 md:mt-32 md:text-lg';
+export default function Portfolio2() {
+  const baseStyling = 'lg:w-80 md:mt-20 md:text-lg';
   return (
     <div id="portfolio">
-      <div className="pt-16 w-80 text-center mx-auto pb-16">
+      <div className="pt-8 px-8 md:pr-0 md:w-80 pb-16 md:m-auto">
         <h1 className="text-2xl mb-12 animate-fadeIn-.4">My Portfolio</h1>
         <p className="animate-fadeIn-1">
           I am presenting my portfolio as a progression in my learning journey.
@@ -27,7 +21,8 @@ export default function Portfolio() {
         </p>
       </div>
       <PortfolioCard
-        bgColor="bg-primary"
+        textColor="text-tertiary"
+        bgColor="bg-[#404042]"
         title="SupperBell Cooking App"
         img1={supperbell1}
         img2={supperbell2}
@@ -47,14 +42,15 @@ export default function Portfolio() {
         </p>
         <div className="flex justify-center">
           <p>Technologies Used:</p>
-          <ul className="ml-6">
+          <ul className="ml-6 -indent-5 pl-4">
             <li>Javascript(React)</li>
             <li>CSS</li>
           </ul>
         </div>
       </PortfolioCard>
       <PortfolioCard
-        bgColor="bg-white"
+        textColor="text-tertiary"
+        bgColor="bg-[#224275]"
         title="StrongLifts Workout Tracker"
         img1={stronglifts1}
         img2={stronglifts2}
@@ -72,7 +68,7 @@ export default function Portfolio() {
         </p>
         <div className="flex justify-center">
           <p>Technologies Used:</p>
-          <ul className="ml-6">
+          <ul className="ml-6 -indent-5 pl-4">
             <li>Javascript(React)</li>
             <li>TailwindCSS</li>
             <li>Framer Motion for animations</li>
@@ -80,7 +76,8 @@ export default function Portfolio() {
         </div>
       </PortfolioCard>
       <PortfolioCard
-        bgColor="bg-primary"
+        textColor="text-tertiary"
+        bgColor="bg-[#092032]"
         title="Recipe.AI Recipe Generator"
         img1={recipeai1}
         img2={recipeai2}
@@ -101,7 +98,7 @@ export default function Portfolio() {
         <div className="flex justify-center">
           <p>Technologies Used:</p>
 
-          <ul className="ml-6">
+          <ul className="ml-6 -indent-5 pl-4">
             <li>MERN Tech Stack</li>
             <li>Mongoose</li>
             <li>React-Redux</li>

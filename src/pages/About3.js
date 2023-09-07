@@ -1,14 +1,9 @@
-import { useEffect } from 'react';
-
-export default function About2() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+export default function About3({ windowWidth }) {
   return (
-    <div className="">
-      <div className="  bg-white  ">
-        <p className="w-80   md:py-16  py-10 mx-auto block animate-fadeIn-.4">
+    <div className="bg-tertiary" id="about">
+      <h1 className="text-3xl pl-8 pt-8">About</h1>
+      <div className="    ">
+        <p className="w-80 mx-auto 2xl:w-auto 2xl:px-80 md:px-0 2xl:mx-80 2xl:py-16  py-8  block animate-fadeIn-.4">
           Hello! My name is John Doomy. I'm 29 years old and a web developer
           based in Denver, CO. I am originally from the east coast in
           Winston-Salem, NC. While I went to school for Linguistics and Teaching
@@ -27,8 +22,8 @@ export default function About2() {
           />
         </div> */}
       </div>
-      <div className=" w-full bg-primary block animate-fadeIn-1">
-        <p className="w-80   py-10 md:py-16 mx-auto block">
+      <div className=" w-full block animate-fadeIn-1">
+        <p className="w-80 2xl:w-auto 2xl:px-80 2xl:mx-80 2xl:py-16 py-8 md:py-16 mx-auto block">
           I am an avid learner and I am always looking to increase my knowledge
           in all sorts of areas. In my free time I look for ways to expand my
           toolkit and increase my skills in coding and web development. I love
@@ -43,12 +38,12 @@ export default function About2() {
           whatever in the kitchen, and finally integrating into the office by
           managing routing for the whole company.
         </p>
-        <div className="bg-white text-black py-10">
+        <div className=" text-black py-8">
           <p className="text-xl md:text-2xl font-bold text-center mb-6">
             Technologies I am familiar with:
           </p>
           <div className="flex justify-center">
-            <ul className="mx-10 mb-4 text-center">
+            <ul className="mx-16 mb-4 -indent-5">
               <li className="mb-2">
                 Javascript (ES6, React, React-Redux, Material UI, Node.js,
                 Express)
@@ -63,7 +58,6 @@ export default function About2() {
               <li className="mb-2">CRUD/REST API's</li>
             </ul>
           </div>
-          <p className="py-10 text-center text-2xl">Thank you for visiting!</p>
         </div>
       </div>
     </div>

@@ -3,15 +3,14 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'hero-image': './src/images/hero_test.jpeg',
-      // },
       colors: {
-        primary: '#50C5E1',
-        secondary: '#4DA8F7',
-        tertiary: '#4A76ED',
-        complementary1: '#4DF7EC',
-        complementary2: '#4AEDB4',
+        primary: '#1f1f1f',
+        secondary: '#c5947c',
+        tertiary: '#aadafa',
+        complementary1: '#6190c2',
+        complementary2: '#71c6b1',
+        complementary3: '#9dc8e5',
+        complementary4: '#dcdcaf',
       },
       animation: {
         'slideFadeInRight-1': 'slideFadeInRight .4s ease-in-out forwards',

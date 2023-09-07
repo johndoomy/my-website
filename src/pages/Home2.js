@@ -48,16 +48,31 @@ export default function Home2() {
           </div>
         </div>
       </div>
-      <div className="text-center pt-8  bg-primary text-black pb-32">
-        <p className="mb-8 text-xl">I'm a web developer based in Denver, CO</p>
-        <Link className="text-black" to="/about">
-          <Button
-            color="bg-complementary2"
-            hoverColor="hover:bg-complementary1"
-          >
-            About
-          </Button>
-        </Link>
+      <div className="md:flex md:justify-center p-8 ">
+        <div className="text-center mb-8  md:m-5 p-6 md:w-80 md:mr-24 rounded-2xl  bg-primary text-black shadow-xl">
+          <p className="mb-6 text-xl">
+            I'm a web developer based in Denver, Colorado
+          </p>
+          <Link className="text-black" to="/about">
+            <Button
+              color="bg-complementary2"
+              hoverColor="hover:bg-complementary1"
+            >
+              About
+            </Button>
+          </Link>
+        </div>
+        <div className="text-center md:m-5 p-6 md:w-80 rounded-2xl  bg-primary text-black shadow-xl">
+          <p className="mb-6 text-xl">Check out my personal projects!</p>
+          <Link className="text-black" to="/portfolio">
+            <Button
+              color="bg-complementary2"
+              hoverColor="hover:bg-complementary1"
+            >
+              Portfolio
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

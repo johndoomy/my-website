@@ -4,6 +4,7 @@ import Button from './Button';
 import { BsGithub, BsGlobe2 } from 'react-icons/bs';
 
 export default function PortfolioCard({
+  textColor,
   bgColor,
   title,
   children,
@@ -25,9 +26,9 @@ export default function PortfolioCard({
   // }
 
   return (
-    <div className={` p-6 pt-8 ${bgColor}`}>
+    <div className={` p-6 pt-8 ${bgColor} ${textColor}`}>
       <h1 className="text-2xl mb-8 md:mb-0 animate-fadeIn-1">{title}</h1>
-      <div className="md:flex md:justify-around animate-fadeIn-1">
+      <div className="lg:flex lg:justify-around md:w-auto animate-fadeIn-1">
         {children[0]}
         <div className="flex justify-normal">
           <img
@@ -49,7 +50,7 @@ export default function PortfolioCard({
         </div>
       </div>
       {children[1]}
-      <div className="my-8 text-center flex justify-evenly md:justify-center">
+      <div className="my-8 text-center flex justify-evenly md:justify-center text-black">
         <div className="md:mr-8">
           <a href={gitHubLink} className=" " rel="noreferrer" target="_blank">
             <Button
