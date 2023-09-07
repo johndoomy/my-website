@@ -15,7 +15,7 @@ export default function Connect() {
 
   return (
     <div id="connect" className="overflow-hidden">
-      <p className="py-8 md:py-32 text-center text-3xl">
+      <p className="py-16 md:py-32 text-center text-3xl">
         Thank you for visiting!
       </p>
       <div className="pb-24 px-6 flex justify-center text-lg">
@@ -24,7 +24,7 @@ export default function Connect() {
           with me via email, and I will respond as soon as possible!
         </p>
       </div>
-      <div className="mx-10 mb-24 md:mb-72 px-6 bg-complementary4">
+      <div className="mx-10 mb-48 md:mb-72 px-6 bg-complementary4">
         <h1 className="text-2xl pt-16 mb-6 text-center">
           Let's get connected!
         </h1>
