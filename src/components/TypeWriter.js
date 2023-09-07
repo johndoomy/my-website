@@ -34,6 +34,18 @@ export default function Typewriter({ texts }) {
     setTimeout(() => setFinished(true), 2300);
   }, [charIndex, currentLineIndex, texts]);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    const headerOffset = 52;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <div className="mt-20 lg:mt-48 text-2xl text-complementary4 font-bold tracking-tight md:text-5xl xl:text-5xl">
@@ -50,6 +62,7 @@ export default function Typewriter({ texts }) {
       {finished && (
         <div className="mt-6 animate-fadeIn-1">
           <Button
+            clickFunction={() => scrollToSection('connect')}
             color="bg-complementary3"
             hoverColor="hover:bg-complementary1"
           >
