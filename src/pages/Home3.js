@@ -32,7 +32,7 @@ export default function Home3({ windowWidth }) {
     };
   }
   return (
-    <div id="home" className="overflow-hidden bg-primary">
+    <div id="home" className="overflow-hidden bg-[#092032]">
       {mobile && intro}
       <div
         className="relative overflow-hidden bg-cover bg-no-repeat"
