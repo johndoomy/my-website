@@ -18,13 +18,6 @@ export default function PortfolioCard({
   const isVisible1 = useOnScreen(ref1);
   const isVisible2 = useOnScreen(ref2);
 
-  // let styling = null;
-  // if (window.innerWidth > 425) {
-  //   styling = {
-  //     height: '530px',
-  //   };
-  // }
-
   return (
     <div className={` p-6 pt-8 ${bgColor} ${textColor}`}>
       <h1 className="text-2xl mb-8 md:mb-0 animate-fadeIn-1">{title}</h1>
@@ -49,7 +42,9 @@ export default function PortfolioCard({
           />
         </div>
       </div>
+
       {children[1]}
+      {children[2]}
       <div className="my-8 text-center flex justify-evenly md:justify-center text-black">
         <div className="md:mr-8">
           <a href={gitHubLink} className=" " rel="noreferrer" target="_blank">

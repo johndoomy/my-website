@@ -29,7 +29,3 @@ ul li::before {
     opacity: 0;
   }
 }
-
-.hero-background {
-  background-image: url('https://johnpersonalwebsite.s3.amazonaws.com/images/bg-hero-2.png');
-}

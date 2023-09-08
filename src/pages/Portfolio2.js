@@ -111,6 +111,9 @@ export default function Portfolio2() {
             <li>Bcrypt for password encryption</li>
           </ul>
         </div>
+        <p className="pt-4 text-center">
+          Note: Testing login is email: test@test.com, password: 123
+        </p>
       </PortfolioCard>
     </div>
   );
