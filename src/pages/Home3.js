@@ -32,10 +32,10 @@ export default function Home3({ windowWidth }) {
     };
   }
   return (
-    <div id="home" className="overflow-hidden bg-[#092032]">
+    <div id="home" className="overflow-hidden bg-primary">
       {mobile && intro}
       <div
-        className="relative overflow-hidden bg-cover bg-no-repeat"
+        className="relative overflow-hidden bg-cover bg-no-repeat animate-fadeIn-.4"
         style={{
           ...styling,
           backgroundImage: `url(${image})`,
