@@ -9,9 +9,10 @@ export default function Typewriter({ texts }) {
   const [finished, setFinished] = useState(false);
 
   useEffect(() => {
+    let timerId;
     if (currentLineIndex < texts.length) {
       if (charIndex < texts[currentLineIndex].length) {
-        setTimeout(() => {
+        timerId = setTimeout(() => {
           if (currentLineIndex === 0) {
             setOutput(
               (prevOutput) =>
@@ -32,6 +33,10 @@ export default function Typewriter({ texts }) {
       }
     }
     setTimeout(() => setFinished(true), 2300);
+
+    return () => {
+      clearTimeout(timerId);
+    };
   }, [charIndex, currentLineIndex, texts]);
 
   const scrollToSection = (sectionId) => {
