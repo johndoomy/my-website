@@ -13,68 +13,11 @@ export default function Portfolio2() {
       <div className="pt-8 px-8 md:pr-0 md:w-80 pb-16 md:m-auto">
         <h1 className="text-3xl mb-12 animate-fadeIn-.4">My Portfolio</h1>
         <p className="animate-fadeIn-1">
-          I am presenting my portfolio as a progression in my learning journey.
-          I have 3 projects that I believe show a clear line of progression over
-          the last 2 years of building up and improving my competency in web
-          development. It is ordered from oldest to newest to reflect this
-          progression.
+          Here are the major projects I have built over the past 2 years that I
+          believe demonstrate progressive growth. Starting with the latest
+          projects first.
         </p>
       </div>
-      <PortfolioCard
-        textColor="text-tertiary"
-        bgColor="bg-[#404042]"
-        title="SupperBell Cooking App"
-        img1={supperbell1}
-        img2={supperbell2}
-        gitHubLink="https://github.com/johndoomy/supperbell-cooking-app"
-        websiteLink="https://vocal-blancmange-a70d03.netlify.app/"
-      >
-        <p className={baseStyling}>
-          This project, while unfinished, was my first major project that I
-          conceived while working at an online food delivery business called
-          SupperBell. I found a need in our kitchen to help the cooks be able to
-          scale up recipes in order to cut out errors in their day to day
-          duties. I unfortunately was not able to finish this project before
-          leaving the company, so I have yet to go back and complete it. This
-          project was originally written using only vanilla HTML, Javascript,
-          and CSS. I rewrote this program several times while learning more and
-          more of Javascript until I finally discovered React.
-        </p>
-        <div className="flex justify-center">
-          <p>Technologies Used:</p>
-          <ul className="ml-6 -indent-5 pl-4">
-            <li>Javascript(React)</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </PortfolioCard>
-      <PortfolioCard
-        textColor="text-tertiary"
-        bgColor="bg-[#224275]"
-        title="StrongLifts Workout Tracker"
-        img1={stronglifts1}
-        img2={stronglifts2}
-        gitHubLink="https://github.com/johndoomy/stronglifts"
-        websiteLink="https://main.d2fech0f4131sc.amplifyapp.com/"
-      >
-        <p className={baseStyling}>
-          This project was designed as a proof of concept to keep track of my
-          workout routine. My goals for this project were to familiarize myself
-          with AWS services and serverless architecture. This web application is
-          serverless, and it utilizes AWS Lambda functions along with AWS API
-          Gateway to directly communicate to my database in DynamoDB. My future
-          goals for this project are to implement graphing functionality as well
-          as implement a user login system.
-        </p>
-        <div className="flex justify-center">
-          <p>Technologies Used:</p>
-          <ul className="ml-6 -indent-5 pl-4">
-            <li>Javascript(React)</li>
-            <li>TailwindCSS</li>
-            <li>Framer Motion for animations</li>
-          </ul>
-        </div>
-      </PortfolioCard>
       <PortfolioCard
         textColor="text-tertiary"
         bgColor="bg-[#092032]"
@@ -84,17 +27,18 @@ export default function Portfolio2() {
         gitHubLink="https://github.com/johndoomy/recipe.ai"
         websiteLink="http://recipe-ai.net/"
       >
-        <p className={baseStyling}>
-          For my latest project, I wanted to learn how to implement a full stack
-          application using the MERN (MongoDB, Express js, React, Node.js) tech
-          stack. I also wanted to familiarize myself with the chatGPT API and
-          also learn React-Redux. After cooking a recipe that I had asked
-          chatGPT to create, it was very delicious if you are wondering, I
-          decided to revisit my idea of a recipe app where one could create and
-          store recipes. This web application allows the user to type in a
-          desired recipe and make a call to chatGPT to create and send back a
-          detailed recipe for any kind of food.
-        </p>
+        <div className={baseStyling}>
+          <h2 className="text-xl text-complementary4">Purpose</h2>
+          <p className="mb-6">Generate any recipe by integrating chatGPT</p>
+          <h2 className="text-xl text-complementary4">About</h2>
+          <p>
+            For my latest project, I wanted to learn how to implement a full
+            stack application using the MERN (MongoDB, Express js, React,
+            Node.js) tech stack. I also wanted to familiarize myself with the
+            chatGPT API and also learn React-Redux.
+          </p>
+        </div>
+
         <div className="flex justify-center">
           <p>Technologies Used:</p>
 
@@ -114,6 +58,70 @@ export default function Portfolio2() {
         <p className="pt-4 text-center">
           Note: Testing login is email: test@test.com, password: 123
         </p>
+      </PortfolioCard>
+      <PortfolioCard
+        textColor="text-tertiary"
+        bgColor="bg-[#224275]"
+        title="StrongLifts Workout Tracker"
+        img1={stronglifts1}
+        img2={stronglifts2}
+        gitHubLink="https://github.com/johndoomy/stronglifts"
+        websiteLink="https://main.d2fech0f4131sc.amplifyapp.com/"
+      >
+        <div className={baseStyling}>
+          <h2 className="text-xl text-complementary4">Purpose</h2>
+          <p className="mb-6">Track workout routine</p>
+          <h2 className="text-xl text-complementary4">About</h2>
+          <p>
+            My goals for this project were to familiarize myself with AWS
+            services and serverless architecture. This web application is
+            serverless, and it utilizes AWS Lambda functions along with AWS API
+            Gateway to directly communicate to my database in DynamoDB.
+          </p>
+        </div>
+
+        <div className="flex justify-center">
+          <p>Technologies Used:</p>
+          <ul className="ml-6 -indent-5 pl-4">
+            <li>Javascript(React)</li>
+            <li>TailwindCSS</li>
+            <li>Framer Motion for animations</li>
+          </ul>
+        </div>
+      </PortfolioCard>
+
+      <PortfolioCard
+        textColor="text-tertiary"
+        bgColor="bg-[#404042]"
+        title="SupperBell Cooking App"
+        img1={supperbell1}
+        img2={supperbell2}
+        gitHubLink="https://github.com/johndoomy/supperbell-cooking-app"
+        websiteLink="https://vocal-blancmange-a70d03.netlify.app/"
+      >
+        <div className={baseStyling}>
+          <h2 className="text-xl text-complementary4">Purpose</h2>
+          <p className="mb-6">
+            Allow SupperBell cooks to store and scale up recipes
+          </p>
+          <h2 className="text-xl text-complementary4">About</h2>
+          <p>
+            This project, while unfinished, was my first major project that I
+            conceived while working at an online food delivery business called
+            SupperBell. I found a need in our kitchen to help the cooks be able
+            to scale up recipes in order to cut out errors in their day to day
+            duties. I unfortunately was not able to finish this project before
+            leaving the company, so I have yet to go back and complete it.
+          </p>
+        </div>
+
+        <div className="flex justify-center">
+          <p>Technologies Used:</p>
+          <ul className="ml-6 -indent-5 pl-4">
+            <li>Javascript(React)</li>
+            <li>CSS</li>
+          </ul>
+        </div>
       </PortfolioCard>
     </div>
   );

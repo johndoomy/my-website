@@ -4,15 +4,15 @@ export default function About3({ windowWidth }) {
       <h1 className="text-3xl pl-8 pt-8">About</h1>
       <div className="    ">
         <p className="w-80 mx-auto 2xl:w-auto 2xl:px-80 md:px-0 2xl:mx-80 2xl:py-16  py-8  block animate-fadeIn-.4">
-          Hello! My name is John Doomy. I'm 29 years old and a web developer
-          based in Denver, CO. I am originally from the east coast in
-          Winston-Salem, NC. While I went to school for Linguistics and Teaching
-          English as a Second Language, my passion over the past two years has
-          pivoted towards web development. In transitioning into web
-          development, I have naturally gravitated towards Javascript, and I
-          have found it to be interesting and fun to learn as a language in
-          terms of my linguistic background. I love learning languages and it
-          felt no different when learning a programming language.
+          Hello! My name is John Doomy. I'm a web developer based in Denver, CO.
+          I am originally from the east coast in Winston-Salem, NC. While I went
+          to school for Linguistics and Teaching English as a Second Language,
+          my passion over the past two years has pivoted towards web
+          development. In transitioning into web development, I have naturally
+          gravitated towards Javascript, and I have found it to be interesting
+          and fun to learn as a language in terms of my linguistic background. I
+          love learning languages and it felt no different when learning a
+          programming language.
         </p>
       </div>
       <div className=" w-full block animate-fadeIn-1">
@@ -42,7 +42,7 @@ export default function About3({ windowWidth }) {
                 Express)
               </li>
               <li className="mb-2">HTML</li>
-              <li className="mb-2">CSS(Vanilla, TailwindCSS, Bootstrap)</li>
+              <li className="mb-2">CSS (Vanilla, TailwindCSS, Bootstrap)</li>
               <li className="mb-2">
                 AWS (S3, DynamoDB, Lambda, API Gateway, EC2)
               </li>
