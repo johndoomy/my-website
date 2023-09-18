@@ -72,7 +72,7 @@ export default function Connect() {
             className={`mb-4 ${isVisible5 && 'animate-slideFadeInRight-3'}`}
           >
             <a
-              href="https://www.linkedin.com/in/john-doomy-84b23a204/"
+              href="https://www.linkedin.com/in/john-doomy"
               rel="noreferrer"
               target="_blank"
             >
