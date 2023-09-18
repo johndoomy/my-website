@@ -4,6 +4,7 @@ import Home3 from './pages/Home3';
 import About3 from './pages/About3';
 import Portfolio2 from './pages/Portfolio2';
 import Connect from './pages/Connect';
+import Footer from './components/Footer';
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -27,6 +28,7 @@ export default function App() {
       <About3 />
       <Portfolio2 />
       <Connect />
+      <Footer />
     </div>
   );
 }
