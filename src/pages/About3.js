@@ -38,7 +38,7 @@ export default function About3({ windowWidth }) {
           <div className="flex justify-center">
             <ul className="mx-16 mb-4 -indent-5">
               <li className="mb-2">
-                Javascript (ES6, React, React-Redux, Material UI, Node.js,
+                Javascript (ES6+, React, React-Redux, Material UI, Node.js,
                 Express)
               </li>
               <li className="mb-2">HTML</li>

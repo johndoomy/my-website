@@ -84,6 +84,7 @@ export default function Portfolio2() {
           <p>Technologies Used:</p>
           <ul className="ml-6 -indent-5 pl-4">
             <li>Javascript(React)</li>
+            <li>AWS(Lambda & API Gateway)</li>
             <li>TailwindCSS</li>
             <li>Framer Motion for animations</li>
           </ul>
