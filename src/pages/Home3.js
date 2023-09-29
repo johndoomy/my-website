@@ -15,13 +15,28 @@ export default function Home3({ windowWidth }) {
   let mobile = true;
   let image;
   let styling;
-  if (windowWidth > 768) {
+  if (windowWidth > 1024) {
     mobile = false;
     image =
       'https://johnpersonalwebsite.s3.amazonaws.com/images/color-right.png';
     styling = {
       backgroundPosition: '40% 65%',
       height: '800px',
+    };
+  } else if (windowWidth < 1024 && windowWidth > 768) {
+    mobile = false;
+    image =
+      'https://johnpersonalwebsite.s3.amazonaws.com/images/color-right.png';
+    styling = {
+      backgroundPosition: '40% 65%',
+      height: '600px',
+    };
+  } else if (windowWidth < 769 && windowWidth > 425) {
+    image =
+      'https://johnpersonalwebsite.s3.amazonaws.com/images/square-color.png';
+    styling = {
+      backgroundPosition: '50% 20%',
+      height: '600px',
     };
   } else {
     image =
