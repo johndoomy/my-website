@@ -24,11 +24,13 @@ export default function App() {
   return (
     <div>
       <Header2 />
-      <Home3 windowWidth={windowWidth} />
-      <About3 />
-      <Portfolio2 />
-      <Connect />
-      <Footer />
+      <div className="overflow-hidden">
+        <Home3 windowWidth={windowWidth} />
+        <About3 />
+        <Portfolio2 />
+        <Connect />
+        <Footer />
+      </div>
     </div>
   );
 }

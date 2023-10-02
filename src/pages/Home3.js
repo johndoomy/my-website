@@ -15,7 +15,7 @@ export default function Home3({ windowWidth }) {
   let mobile = true;
   let image;
   let styling;
-  if (windowWidth > 1024) {
+  if (windowWidth > 1023) {
     mobile = false;
     image =
       'https://johnpersonalwebsite.s3.amazonaws.com/images/color-right.png';

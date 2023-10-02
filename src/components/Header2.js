@@ -49,7 +49,7 @@ export default function Header2() {
       if (portfolioPosition.top <= 52 && portfolioPosition.bottom >= 0) {
         setActiveSection('portfolio');
       }
-      if (connectPosition.top <= 52 && connectPosition.bottom >= 0) {
+      if (connectPosition.top <= 60 && connectPosition.bottom >= 0) {
         setActiveSection('connect');
       }
     });
