@@ -41,12 +41,10 @@ export default function Typewriter({ texts }) {
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
-    const headerOffset = 52;
     const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - headerOffset;
 
     window.scrollBy({
-      top: offsetPosition,
+      top: elementPosition,
       behavior: 'smooth',
     });
   };

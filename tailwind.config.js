@@ -19,8 +19,18 @@ module.exports = {
         'fadeIn-.4': 'fadeIn .4s ease-in-out',
         'fadeIn-1': 'fadeIn 1s ease-in-out',
         'fadeIn-3': 'fadeIn 8s ease-in-out',
+        'slideIn-.2': 'slideIn .2s ease-in-out',
+        'slideOut-.2': 'slideOut .2s ease-in-out',
       },
       keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        slideOut: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
         slideFadeInRight: {
           '0%': { transform: 'translateX(100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },

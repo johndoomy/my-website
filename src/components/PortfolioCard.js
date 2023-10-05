@@ -4,6 +4,7 @@ import Button from './Button';
 import { BsGithub, BsGlobe2 } from 'react-icons/bs';
 
 export default function PortfolioCard({
+  windowWidth,
   textColor,
   bgColor,
   title,
@@ -18,12 +19,19 @@ export default function PortfolioCard({
   const isVisible1 = useOnScreen(ref1);
   const isVisible2 = useOnScreen(ref2);
 
+  let smallMobile = false;
+  if (windowWidth < 376) {
+    smallMobile = true;
+  } else {
+    smallMobile = false;
+  }
+
   return (
     <div className={` p-6 pt-8 ${bgColor} ${textColor}`}>
       <h1 className="text-2xl mb-8 md:mb-0 animate-fadeIn-1">{title}</h1>
       <div className="lg:flex lg:justify-around md:w-auto animate-fadeIn-1">
         {children[0]}
-        <div className="flex justify-normal">
+        <div className={`${smallMobile ? '' : 'flex justify-normal'}`}>
           <img
             ref={ref1}
             className={`md:mr-24 h-80 md:h-auto md:w-64 mx-auto my-10 border-2 border-black rounded-2xl drop-shadow-xl opacity-0 ${

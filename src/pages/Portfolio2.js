@@ -6,7 +6,7 @@ import recipeai2 from '../images/recipeai2.png';
 import supperbell1 from '../images/supperbell1.png';
 import supperbell2 from '../images/supperbell2.png';
 
-export default function Portfolio2() {
+export default function Portfolio2({ windowWidth }) {
   const baseStyling = 'lg:w-80 md:mt-20 md:text-lg';
   return (
     <div id="portfolio">
@@ -19,6 +19,7 @@ export default function Portfolio2() {
         </p>
       </div>
       <PortfolioCard
+        windowWidth={windowWidth}
         textColor="text-tertiary"
         bgColor="bg-[#092032]"
         title="Recipe.AI Recipe Generator"
@@ -60,6 +61,7 @@ export default function Portfolio2() {
         </p>
       </PortfolioCard>
       <PortfolioCard
+        windowWidth={windowWidth}
         textColor="text-tertiary"
         bgColor="bg-[#224275]"
         title="StrongLifts Workout Tracker"
@@ -92,6 +94,7 @@ export default function Portfolio2() {
       </PortfolioCard>
 
       <PortfolioCard
+        windowWidth={windowWidth}
         textColor="text-tertiary"
         bgColor="bg-[#404042]"
         title="SupperBell Cooking App"

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Header2 from './components/Header2';
+import Sidebar from './components/Sidebar';
 import Home3 from './pages/Home3';
 import About3 from './pages/About3';
 import Portfolio2 from './pages/Portfolio2';
@@ -22,15 +23,13 @@ export default function App() {
   }, []);
 
   return (
-    <div>
-      <Header2 />
-      <div className="overflow-hidden">
-        <Home3 windowWidth={windowWidth} />
-        <About3 />
-        <Portfolio2 />
-        <Connect />
-        <Footer />
-      </div>
+    <div className="">
+      {windowWidth > 425 ? <Header2 /> : <Sidebar />}
+      <Home3 windowWidth={windowWidth} />
+      <About3 />
+      <Portfolio2 windowWidth={windowWidth} />
+      <Connect />
+      <Footer />
     </div>
   );
 }

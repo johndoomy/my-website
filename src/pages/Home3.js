@@ -56,7 +56,7 @@ export default function Home3({ windowWidth }) {
           backgroundImage: `url(${image})`,
         }}
       >
-        <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
+        <div className=" absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
           {!mobile && intro}
         </div>
       </div>
