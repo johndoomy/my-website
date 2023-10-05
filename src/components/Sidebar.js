@@ -64,7 +64,7 @@ export default function Sidebar() {
   const throttledHandleScroll = _.throttle(handleScroll, 200);
 
   useEffect(() => {
-    window.addEventListener('scroll', throttledHandleScroll); // Use the throttled version
+    window.addEventListener('scroll', throttledHandleScroll);
 
     return () => {
       window.removeEventListener('scroll', throttledHandleScroll);

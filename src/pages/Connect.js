@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import useOnScreen from '../hooks/useOnScreen';
+// import useOnScreen from '../hooks/useOnScreen';
 import Button from '../components/Button';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
