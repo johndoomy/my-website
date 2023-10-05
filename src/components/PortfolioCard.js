@@ -16,8 +16,8 @@ export default function PortfolioCard({
 }) {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
-  const isVisible1 = useOnScreen(ref1);
-  const isVisible2 = useOnScreen(ref2);
+  // const isVisible1 = useOnScreen(ref1);
+  // const isVisible2 = useOnScreen(ref2);
 
   let smallMobile = false;
   if (windowWidth < 376) {
@@ -34,17 +34,14 @@ export default function PortfolioCard({
         <div className={`${smallMobile ? '' : 'flex justify-normal'}`}>
           <img
             ref={ref1}
-            className={`md:mr-24 h-80 md:h-auto md:w-64 mx-auto my-10 border-2 border-black rounded-2xl drop-shadow-xl opacity-0 ${
-              isVisible1 && 'animate-slideFadeInRight-1'
-            }`}
+            //animation bug, add back after fix: ${isVisible1 && 'animate-slideFadeInRight-1'}
+            className={`md:mr-24 h-80 md:h-auto md:w-64 mx-auto my-10 border-2 border-black rounded-2xl drop-shadow-xl opacity-100 `}
             src={img1}
             alt="screenshot of web application"
           />
           <img
             ref={ref2}
-            className={` h-80 mx-auto md:h-auto md:w-64 my-10 border-2 border-black rounded-2xl drop-shadow-xl opacity-0 ${
-              isVisible2 && 'animate-slideFadeInRight-2'
-            }`}
+            className={` h-80 mx-auto md:h-auto md:w-64 my-10 border-2 border-black rounded-2xl drop-shadow-xl opacity-100 `}
             src={img2}
             alt="screenshot of web application"
           />
