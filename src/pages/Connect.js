@@ -9,9 +9,9 @@ export default function Connect() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
 
-  const isVisible3 = useOnScreen(ref3);
-  const isVisible4 = useOnScreen(ref4);
-  const isVisible5 = useOnScreen(ref5);
+  // const isVisible3 = useOnScreen(ref3);
+  // const isVisible4 = useOnScreen(ref4);
+  // const isVisible5 = useOnScreen(ref5);
 
   return (
     <div id="connect" className="overflow-hidden">
@@ -31,7 +31,8 @@ export default function Connect() {
         <div className="ml-4 md:ml-12 py-10 text-center md:flex md:justify-evenly md:text-2xl">
           <div
             ref={ref3}
-            className={`mb-4 ${isVisible3 && 'animate-slideFadeInRight-1'}`}
+            // ${isVisible3 && 'animate-slideFadeInRight-1'} buggy behavior add to classname after fixing
+            className={`mb-4 `}
           >
             <Button
               color="bg-tertiary"
@@ -48,10 +49,7 @@ export default function Connect() {
               </div>
             </Button>
           </div>
-          <div
-            ref={ref4}
-            className={`mb-4 ${isVisible4 && 'animate-slideFadeInRight-2'}`}
-          >
+          <div ref={ref4} className={`mb-4 `}>
             <a
               href="https://github.com/johndoomy"
               rel="noreferrer"
@@ -67,10 +65,7 @@ export default function Connect() {
               </Button>
             </a>
           </div>
-          <div
-            ref={ref5}
-            className={`mb-4 ${isVisible5 && 'animate-slideFadeInRight-3'}`}
-          >
+          <div ref={ref5} className={`mb-4 `}>
             <a
               href="https://www.linkedin.com/in/john-doomy"
               rel="noreferrer"

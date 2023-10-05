@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import _ from 'lodash';
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,13 +61,15 @@ export default function Sidebar() {
     });
   };
 
+  const throttledHandleScroll = _.throttle(handleScroll, 200);
+
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', throttledHandleScroll); // Use the throttled version
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', throttledHandleScroll);
     };
-  }, []);
+  }, [throttledHandleScroll]);
 
   const baseStyling =
     'px-7 w-auto py-4 md:px-12 md:hover:bg-tertiary text-primary';
