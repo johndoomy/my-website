@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import useOnScreen from '../hooks/useOnScreen';
+// import useOnScreen from '../hooks/useOnScreen';
 import Button from './Button';
 import { BsGithub, BsGlobe2 } from 'react-icons/bs';
 

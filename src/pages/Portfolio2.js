@@ -1,10 +1,12 @@
-import PortfolioCard from '../components/PortfolioCard';
+import PortfolioCard from '../components/PortfolioCard2';
 import stronglifts1 from '../images/stronglifts1.png';
 import stronglifts2 from '../images/stronglifts2.png';
 import recipeai1 from '../images/recipeai1.png';
 import recipeai2 from '../images/recipeai2.png';
-import supperbell1 from '../images/supperbell1.png';
-import supperbell2 from '../images/supperbell2.png';
+import awd_estimator_demo from '../videos/awd_estimator_demo.mp4';
+import awd_estimator_pdf_demo from '../videos/awd_estimator_pdf_demo.mp4';
+// import supperbell1 from '../images/supperbell1.png';
+// import supperbell2 from '../images/supperbell2.png';
 
 export default function Portfolio2({ windowWidth }) {
   const baseStyling = 'lg:w-80 md:mt-20 md:text-lg';
@@ -22,9 +24,55 @@ export default function Portfolio2({ windowWidth }) {
         windowWidth={windowWidth}
         textColor="text-tertiary"
         bgColor="bg-[#092032]"
+        title="AWD Estimator (Mobile App)"
+        media1={{ type: 'video', src: awd_estimator_demo }}
+        media2={{ type: 'video', src: awd_estimator_pdf_demo }}
+        // gitHubLink="Private Repo"
+        // websiteLink="http://recipe-ai.net/"
+      >
+        <div className={baseStyling}>
+          <h2 className="text-xl text-complementary4">Purpose</h2>
+          <p className="mb-6">
+            Create and send predictive estimates for water
+            restoration/mitigation services.
+          </p>
+          <h2 className="text-xl text-complementary4">About</h2>
+          <p>
+            The company I worked for needed a way for their technicians to
+            easily write estimates for their clients. The software they were
+            using had a high learning curve and was very tedious to use on
+            mobile. I worked hand-in-hand with the owners and technicians to
+            come up with a lightweight and manageable solution that allowed for
+            increased success in client acquisition and satisfaction.
+          </p>
+        </div>
+
+        <div className="flex justify-center">
+          <p>Technologies Used:</p>
+
+          <ul className="ml-6 -indent-5 pl-4">
+            <li>React Native</li>
+            <li>RTK Query</li>
+            <li>Node Express</li>
+            <li>Puppeteer for PDF generation</li>
+            <li>Nodemailer to send emails</li>
+            <li>AWS EC2</li>
+            <li>JWT for user verification</li>
+            <li>Bcrypt for password encryption</li>
+          </ul>
+        </div>
+        <p className="pt-4 text-center">
+          Note: This project's repo is private due to the contract with the
+          company it was built for.
+        </p>
+      </PortfolioCard>
+      <PortfolioCard
+        windowWidth={windowWidth}
+        textColor="text-tertiary"
+        bgColor="bg-[#224275]"
         title="Recipe.AI Recipe Generator"
-        img1={recipeai1}
-        img2={recipeai2}
+        media1={{ type: 'image', src: recipeai1 }}
+        media2={{ type: 'image', src: recipeai2 }}
         gitHubLink="https://github.com/johndoomy/recipe.ai"
         websiteLink="http://recipe-ai.net/"
       >
@@ -63,10 +111,10 @@ export default function Portfolio2({ windowWidth }) {
       <PortfolioCard
         windowWidth={windowWidth}
         textColor="text-tertiary"
-        bgColor="bg-[#224275]"
+        bgColor="bg-[#404042]"
         title="StrongLifts Workout Tracker"
-        img1={stronglifts1}
-        img2={stronglifts2}
+        media1={{ type: 'image', src: stronglifts1 }}
+        media2={{ type: 'image', src: stronglifts2 }}
         gitHubLink="https://github.com/johndoomy/stronglifts"
         websiteLink="https://main.d2fech0f4131sc.amplifyapp.com/"
       >
@@ -93,13 +141,13 @@ export default function Portfolio2({ windowWidth }) {
         </div>
       </PortfolioCard>
 
-      <PortfolioCard
+      {/* <PortfolioCard
         windowWidth={windowWidth}
         textColor="text-tertiary"
         bgColor="bg-[#404042]"
         title="SupperBell Cooking App"
-        img1={supperbell1}
-        img2={supperbell2}
+        media1={{ type: 'image', src: supperbell1 }}
+        media2={{ type: 'image', src: supperbell2 }}
         gitHubLink="https://github.com/johndoomy/supperbell-cooking-app"
         websiteLink="https://vocal-blancmange-a70d03.netlify.app/"
       >
@@ -126,7 +174,7 @@ export default function Portfolio2({ windowWidth }) {
             <li>CSS</li>
           </ul>
         </div>
-      </PortfolioCard>
+      </PortfolioCard> */}
     </div>
   );
 }
