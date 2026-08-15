@@ -27,8 +27,7 @@ export default function About3({ windowWidth }) {
           coordinating projects, managing client relationships, and keeping work
           with deadlines on track. That background shows up in how I now work on
           projects. I care about shipping something that actually works and
-          making sure it's enjoyable to use for the end user. And I deeply enjoy
-          working closely with the people that I'm building for.
+          making sure it's enjoyable to use for the end user.
         </p>
         <div className=" text-black py-8">
           <p className="text-xl md:text-2xl font-bold text-center mb-6">
