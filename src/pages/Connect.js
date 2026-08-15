@@ -24,8 +24,8 @@ export default function Connect() {
           with me via email, and I will respond as soon as possible!
         </p>
       </div>
-      <div className="mx-10 mb-48 md:mb-72 px-6 bg-complementary4">
-        <h1 className="text-2xl pt-16 mb-6 text-center">
+      <div className="mx-10 mb-48 md:mb-72 px-6 bg-[#224275] rounded-xl">
+        <h1 className="text-2xl pt-16 mb-6 text-center text-tertiary">
           Let's get connected!
         </h1>
         <div className="ml-4 md:ml-12 py-10 text-center md:flex md:justify-evenly md:text-2xl">

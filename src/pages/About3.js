@@ -3,33 +3,32 @@ export default function About3({ windowWidth }) {
     <div className="bg-tertiary" id="about">
       <h1 className="text-3xl pl-8 pt-8">About</h1>
       <div className="    ">
-        <p className="w-80 mx-auto 2xl:w-auto 2xl:px-80 md:px-0 2xl:mx-80 2xl:py-16  py-8  block animate-fadeIn-.4">
-          Hello! My name is John Doomy. I'm a web developer based in Denver, CO.
-          I am originally from the east coast in Winston-Salem, NC. While I went
+        <p className="w-80 mx-auto 2xl:w-auto 2xl:px-80 md:px-0 2xl:mx-80 2xl:py-8  py-8  block animate-fadeIn-.4">
+          Hello! My name is John Doomy. I'm a web and mobile developer based in
+          Denver, CO working primarily with React and React Native. While I went
           to school for Linguistics and Teaching English as a Second Language,
-          my passion over the past two years has pivoted towards web
-          development. In transitioning into web development, I have naturally
-          gravitated towards Javascript, and I have found it to be interesting
-          and fun to learn as a language in terms of my linguistic background. I
-          love learning languages and it felt no different when learning a
-          programming language.
+          my passion over the past few years has pivoted towards programming,
+          and I took online courses to get where I am today.
         </p>
       </div>
       <div className=" w-full block animate-fadeIn-1">
-        <p className="w-80 2xl:w-auto 2xl:px-80 2xl:mx-80 2xl:py-16 py-8 md:py-16 mx-auto block">
-          I am an avid learner and I am always looking to increase my knowledge
-          in all sorts of areas. In my free time I look for ways to expand my
-          toolkit and increase my skills in coding and web development. I love
-          the feeling of finally solving a problem or understanding the
-          inner-workings of something new. I work well with others, and am
-          always willing to admit when I'm wrong or let someone show me a better
-          way of doing things. I'm adaptable and always willing to do what it
-          takes to get the job done. In my previous job at SupperBell, I started
-          all the way at the bottom as a driver. As I continued working there, I
-          gradually worked my way up the ladder: first as a prep cook in the
-          kitchen learning how to cook, secondly as a full cook able to cook
-          whatever in the kitchen, and finally integrating into the office by
-          managing routing for the whole company.
+        <p className="w-80 2xl:w-auto 2xl:px-80 2xl:mx-80 2xl:py-8  py-8 md:py-16 mx-auto block">
+          I took what I learned, and went in search for somewhere I could apply
+          myself. I ended up finding a home at American Water Damage of Denver
+          as a one man team where, among other web related work, I built a
+          mobile application from scratch that allows their field technicians to
+          create and send project estimates directly to clients for water
+          restoration and mitigation work. It has been in active use for over a
+          year, and has given their team a much more streamlined experience that
+          has improved client relations.
+        </p>
+        <p className="w-80 2xl:w-auto 2xl:px-80 2xl:mx-80 2xl:py-8  py-8 md:py-16 mx-auto block">
+          Before development, I spent years in operations centered roles: mainly
+          coordinating projects, managing client relationships, and keeping work
+          with deadlines on track. That background shows up in how I now work on
+          projects. I care about shipping something that actually works and
+          making sure it's enjoyable to use for the end user. And I deeply enjoy
+          working closely with the people that I'm building for.
         </p>
         <div className=" text-black py-8">
           <p className="text-xl md:text-2xl font-bold text-center mb-6">
@@ -37,10 +36,11 @@ export default function About3({ windowWidth }) {
           </p>
           <div className="flex justify-center">
             <ul className="mx-16 mb-4 -indent-5">
-              <li className="mb-2">
-                Javascript (ES6+, React, React-Redux, Material UI, Node.js,
-                Express)
-              </li>
+              <li className="mb-2">Javascript & Typescript</li>
+              <li className="mb-2">React, React Native, & Next.js</li>
+              <li className="mb-2">Redux/RTK Query</li>
+              <li className="mb-2">Node.js</li>
+              <li className="mb-2">LLM's (ChatGPT, Claude, & Gemini)</li>
               <li className="mb-2">HTML</li>
               <li className="mb-2">CSS (Vanilla, TailwindCSS, Bootstrap)</li>
               <li className="mb-2">
@@ -49,6 +49,7 @@ export default function About3({ windowWidth }) {
               <li className="mb-2">MongoDB</li>
               <li className="mb-2">Git/GitHub</li>
               <li className="mb-2">CRUD/REST API's</li>
+              <li className="mb-2">Docker</li>
             </ul>
           </div>
         </div>
