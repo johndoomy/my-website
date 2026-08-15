@@ -1,12 +1,12 @@
 # my-website
 
 Personal portfolio/resume site for John Doomy, a web developer based in Denver, CO. Single-page
-scrolling layout — Home, About, Portfolio, Connect — showcasing three projects: Recipe.AI,
-StrongLifts, and the SupperBell Cooking App, with links to email, GitHub, and LinkedIn.
+scrolling layout — Home, About, Portfolio, Connect — showcasing three projects: AWD Estimator, Recipe.AI, and
+StrongLifts, with links to email, GitHub, and LinkedIn.
 
 ## Tech Stack
 
-- React 18 on Create React App (`react-scripts`)
+- React 18
 - Tailwind CSS
 - react-icons
 

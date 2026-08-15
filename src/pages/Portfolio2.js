@@ -3,8 +3,8 @@ import stronglifts1 from '../images/stronglifts1.png';
 import stronglifts2 from '../images/stronglifts2.png';
 import recipeai1 from '../images/recipeai1.png';
 import recipeai2 from '../images/recipeai2.png';
-import awd_estimator_demo from '../videos/awd_estimator_demo.mp4';
-import awd_estimator_pdf_demo from '../videos/awd_estimator_pdf_demo.mp4';
+// import awd_estimator_demo from '../videos/awd_estimator_demo.mp4';
+// import awd_estimator_pdf_demo from '../videos/awd_estimator_pdf_demo.mp4';
 // import supperbell1 from '../images/supperbell1.png';
 // import supperbell2 from '../images/supperbell2.png';
 
@@ -25,8 +25,14 @@ export default function Portfolio2({ windowWidth }) {
         textColor="text-tertiary"
         bgColor="bg-[#092032]"
         title="AWD Estimator (Mobile App)"
-        media1={{ type: 'video', src: awd_estimator_demo }}
-        media2={{ type: 'video', src: awd_estimator_pdf_demo }}
+        media1={{
+          type: 'video',
+          src: 'https://johnpersonalwebsite.s3.us-east-1.amazonaws.com/videos/awd_estimator_demo.mp4',
+        }}
+        media2={{
+          type: 'video',
+          src: 'https://johnpersonalwebsite.s3.us-east-1.amazonaws.com/videos/awd_estimator_pdf_demo.mp4',
+        }}
         // gitHubLink="Private Repo"
         // websiteLink="http://recipe-ai.net/"
       >
